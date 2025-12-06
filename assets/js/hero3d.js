@@ -4,10 +4,8 @@ const canvas = document.getElementById("hero-bg");
 
 // Scene
 const scene = new THREE.Scene();
-scene.background = new THREE.Color(0x070709);
-
-// Fog suave (tipo o da imagem)
-scene.fog = new THREE.FogExp2(0x050506, 0.35);
+scene.background = new THREE.Color(0x030518); // fundo azul bem escuro
+scene.fog = new THREE.FogExp2(0x080a20, 0.35); // névoa azul escuro mais clara
 
 // Camera
 const camera = new THREE.PerspectiveCamera(
@@ -61,7 +59,7 @@ const shards = [];
 for (let i = 0; i < 320; i++) {
   const g = new THREE.TetrahedronGeometry(0.12, 0);
   const m = new THREE.MeshPhysicalMaterial({
-    color: 0x111111,
+    color: 0x4455aa, // azul mais claro, destacando-se do fundo
     metalness: 0.6,
     roughness: 0.4,
     flatShading: true,
