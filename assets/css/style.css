@@ -426,6 +426,10 @@ body {
     backdrop-filter: blur(14px);
     transition: all 0.3s ease;
   }
+
+  .cursor, .cursor-outline {
+    display: none;
+  }
 }
 
 
