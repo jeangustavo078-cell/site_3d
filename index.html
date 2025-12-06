@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Three.js Mentor</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/animations.css" />
+
+    <!-- Import Map (Three.js) -->
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.164/build/three.module.js",
+          "three/examples/": "https://cdn.jsdelivr.net/npm/three@0.164/examples/jsm/"
+        }
+      }
+    </script>
+
+    <!-- JS -->
+    <script type="module" src="assets/js/hero3d.js" defer></script>
+    <script type="module" src="assets/js/cursor.js" defer></script>
+    <script type="module" src="assets/js/main.js" defer></script>
+  </head>
+
+  <body>
+    <div class="cursor"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Fundo 3D do Hero -->
+    <canvas id="hero-bg"></canvas>
+
+    <!-- ============================= -->
+    <!-- HERO -->
+    <!-- ============================= -->
+
+    <header class="hero">
+      <h1 class="title anim-fadeup">THREE.JS MENTOR</h1>
+      <p class="subtitle anim-fadeup-delay">
+        Criando experiências digitais imersivas com WebGL e efeitos 3D.
+      </p>
+
+      <nav class="nav anim-fadeup-delay2">
+        <a href="#work">Projetos</a>
+        <a href="#about">Sobre</a>
+        <a href="#services">Serviços</a>
+        <a href="#testimonials">Depoimentos</a>
+        <a href="#contact">Contato</a>
+      </nav>
+    </header>
+
+    <!-- ============================= -->
+    <!-- WORK -->
+    <!-- ============================= -->
+
+    <section id="work" class="section">
+      <h2 class="section-title anim-fadeup">Projetos</h2>
+
+      <div class="work-grid">
+        <div class="work-card anim-fadeup-delay">
+          <h3>Projeto WebGL</h3>
+          <p>Experiência imersiva com partículas e shaders avançados.</p>
+        </div>
+
+        <div class="work-card anim-fadeup-delay">
+          <h3>Landing Minimalista</h3>
+          <p>Design limpo, animações suaves e alto desempenho.</p>
+        </div>
+
+        <div class="work-card anim-fadeup-delay">
+          <h3>Portfolio Criativo</h3>
+          <p>Transições 3D e storytelling visual com WebGL.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- ABOUT -->
+    <!-- ============================= -->
+
+    <section id="about" class="section">
+      <h2 class="section-title anim-fadeup">Sobre mim</h2>
+
+      <p class="about-text anim-fadeup-delay">
+        Desenvolvedor especializado em interfaces 3D, interatividade e animações
+        modernas. Foco em WebGL, Three.js, performance e experiência do usuário.
+      </p>
+
+      <div class="timeline anim-fadeup-delay">
+        <div class="timeline-item">
+          <h3>2023 — Começo no WebGL</h3>
+          <p>Estudando shaders, malhas e interatividade 3D.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>2024 — Freelancer</h3>
+          <p>Sites imersivos e animações 3D personalizadas.</p>
+        </div>
+      </div>
+
+      <div class="skills anim-fadeup-delay">
+        <div class="skill-bar" style="--value: 90%">
+          <span>Three.js</span>
+          <div class="skill-fill"></div>
+        </div>
+
+        <div class="skill-bar" style="--value: 85%">
+          <span>GSAP</span>
+          <div class="skill-fill"></div>
+        </div>
+
+        <div class="skill-bar" style="--value: 70%">
+          <span>GLSL / Shaders</span>
+          <div class="skill-fill"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- SERVICES -->
+    <!-- ============================= -->
+
+    <section id="services" class="section">
+      <h2 class="section-title anim-fadeup">Serviços</h2>
+
+      <div class="services-grid">
+        <div class="service-card anim-fadeup-delay">
+          <h3>WebGL Experiences</h3>
+          <p>
+            Criação de experiências visuais imersivas com shaders e animações.
+          </p>
+        </div>
+
+        <div class="service-card anim-fadeup-delay">
+          <h3>Sites 3D Interativos</h3>
+          <p>Navegação 3D moderna com performance e estética minimalista.</p>
+        </div>
+
+        <div class="service-card anim-fadeup-delay">
+          <h3>UI/UX Motion</h3>
+          <p>Transições e microinterações para aumentar o engajamento.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- TESTIMONIALS -->
+    <!-- ============================= -->
+
+    <section id="testimonials" class="section">
+      <h2 class="section-title anim-fadeup">Depoimentos</h2>
+
+      <div class="testimonial-slider anim-fadeup-delay">
+        <div class="testimonial-track">
+          <div class="testimonial-card">
+            “Experiências 3D impressionantes, recomendo demais!”
+            <span>— Cliente A</span>
+          </div>
+
+          <div class="testimonial-card">
+            “O trabalho dele elevou nosso projeto a outro nível!”
+            <span>— Cliente B</span>
+          </div>
+
+          <div class="testimonial-card">
+            “Profissional, criativo e rápido. Excelente parceiro!”
+            <span>— Cliente C</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- CONTACT -->
+    <!-- ============================= -->
+
+    <section id="contact" class="section">
+      <h2 class="section-title anim-fadeup">Contato</h2>
+
+      <form class="contact-form anim-fadeup-delay">
+        <input type="text" placeholder="Seu nome" required />
+        <input type="email" placeholder="Seu e-mail" required />
+        <textarea rows="5" placeholder="Sua mensagem"></textarea>
+        <button type="submit">Enviar Mensagem</button>
+      </form>
+    </section>
+
+    <!-- ============================= -->
+    <!-- FOOTER -->
+    <!-- ============================= -->
+
+    <footer class="footer">
+      <p>© 2025 Three.js Mentor — Todos os direitos reservados.</p>
+    </footer>
+  </body>
+</html>
