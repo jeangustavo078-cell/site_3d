@@ -429,6 +429,7 @@ body {
 
   .cursor, .cursor-outline {
     display: none;
+    cursor: none;
   }
 }
 
